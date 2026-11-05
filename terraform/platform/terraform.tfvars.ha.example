@@ -1,0 +1,26 @@
+# Example HA profile aligned with docs/design.md.
+# This file is intentionally not auto-loaded by Terraform.
+# Copy it to terraform.tfvars only after reviewing capacity, quotas and cost.
+project_id  = "replace-with-your-existing-project"
+region      = "me-west1"
+name        = "architect-ha"
+node_zones  = ["me-west1-a", "me-west1-b", "me-west1-c"]
+
+# One initial node per zone; autoscaler limits are TOTAL across all zones.
+min_nodes = 3
+max_nodes = 6
+
+# Regional Cloud SQL HA: primary and standby in separate zones.
+sql_ha   = true
+sql_tier = "db-custom-1-3840"
+
+# Add only reachable private source CIDRs if administrators/agents need
+# direct access to the private GKE control-plane endpoint.
+admin_cidrs = {}
+
+deletion_protection = true
+
+labels = {
+  purpose = "architect-assessment"
+  env     = "ha-example"
+}

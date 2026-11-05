@@ -1,0 +1,12 @@
+project_id  = "replace-with-your-existing-project"
+region      = "me-west1"
+name        = "architect-lab"
+node_zones  = ["me-west1-a"]
+min_nodes   = 1
+max_nodes   = 2
+sql_ha      = false
+sql_tier    = "db-custom-1-3840"
+# Authorizes a source range only; it does not create an agent, route, VPN or firewall.
+admin_cidrs = {}
+# admin_cidrs = { "connected-admin-subnet" = "10.60.0.0/24" }
+deletion_protection = true

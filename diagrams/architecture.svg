@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3200" height="1900" viewBox="0 0 3200 1900"><defs><marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0 0 L0 6 L9 3z" fill="#52637a"/></marker></defs>
+<rect x="0" y="0" width="3200" height="1900" rx="0" fill="#f1f5f9" stroke="none" stroke-width="0"/>
+<rect x="35" y="25" width="3130" height="105" rx="18" fill="#102847" stroke="#102847" stroke-width="1"/>
+<text x="75" y="70" font-family="Arial, DejaVu Sans, sans-serif" font-size="32" font-weight="700" fill="#fff" text-anchor="start">GCP | SURVEY INTAKE &amp; PROCESSING PLATFORM</text>
+<text x="75" y="105" font-family="Arial, DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#dbeafe" text-anchor="start">Conceptual architecture  •  Primary region: me-west1 (Tel Aviv)  •  Production environment</text>
+<rect x="35" y="155" width="410" height="510" rx="18" fill="#fff" stroke="#94a3b8" stroke-width="3"/>
+<text x="59" y="193" font-family="Arial, DejaVu Sans, sans-serif" font-size="24" font-weight="700" fill="#0f172a" text-anchor="start">EXTERNAL ACCESS</text>
+<text x="59" y="221" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#64748b" text-anchor="start">User interaction and enterprise identity</text>
+<rect x="65" y="250" width="350" height="105" rx="14" fill="#eff6ff" stroke="#60a5fa" stroke-width="2"/>
+<path d="M77,250 H403" stroke="#60a5fa" stroke-width="8" stroke-linecap="round"/>
+<text x="240.0" y="284" font-family="Arial, DejaVu Sans, sans-serif" font-size="20" font-weight="700" fill="#14213d" text-anchor="middle">External User</text>
+<text x="240.0" y="312" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">Browser / survey submission</text>
+<rect x="65" y="405" width="350" height="115" rx="14" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="2"/>
+<path d="M77,405 H403" stroke="#8b5cf6" stroke-width="8" stroke-linecap="round"/>
+<text x="240.0" y="439" font-family="Arial, DejaVu Sans, sans-serif" font-size="20" font-weight="700" fill="#14213d" text-anchor="middle">Enterprise Identity Provider</text>
+<text x="240.0" y="467" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">OIDC / OAuth 2.0</text>
+<text x="240.0" y="490" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">Authentication and identity tokens</text>
+<rect x="65" y="555" width="350" height="90" rx="14" fill="#f8fafc" stroke="#64748b" stroke-width="2"/>
+<path d="M77,555 H403" stroke="#64748b" stroke-width="8" stroke-linecap="round"/>
+<text x="240.0" y="589" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#14213d" text-anchor="middle">Report download</text>
+<text x="240.0" y="617" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">API authorization • short-lived URL</text>
+<rect x="35" y="700" width="410" height="550" rx="18" fill="#fffaf2" stroke="#f59e0b" stroke-width="3"/>
+<text x="59" y="738" font-family="Arial, DejaVu Sans, sans-serif" font-size="24" font-weight="700" fill="#0f172a" text-anchor="start">ON-PREMISES ENVIRONMENT</text>
+<text x="59" y="766" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#64748b" text-anchor="start">Reference data source and CI/CD control plane</text>
+<rect x="65" y="815" width="150" height="110" rx="14" fill="#fff" stroke="#f59e0b" stroke-width="2"/>
+<path d="M77,815 H203" stroke="#f59e0b" stroke-width="8" stroke-linecap="round"/>
+<text x="140.0" y="849" font-family="Arial, DejaVu Sans, sans-serif" font-size="20" font-weight="700" fill="#14213d" text-anchor="middle">SQL Server</text>
+<text x="140.0" y="877" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">Source database</text>
+<rect x="260" y="815" width="150" height="110" rx="14" fill="#fff" stroke="#f59e0b" stroke-width="2"/>
+<path d="M272,815 H398" stroke="#f59e0b" stroke-width="8" stroke-linecap="round"/>
+<text x="335.0" y="849" font-family="Arial, DejaVu Sans, sans-serif" font-size="20" font-weight="700" fill="#14213d" text-anchor="middle">HA VPN</text>
+<text x="335.0" y="877" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">Private connectivity</text>
+<rect x="65" y="1000" width="345" height="190" rx="14" fill="#fff" stroke="#64748b" stroke-width="2"/>
+<path d="M77,1000 H398" stroke="#64748b" stroke-width="8" stroke-linecap="round"/>
+<text x="237.5" y="1034" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#14213d" text-anchor="middle">Azure DevOps Server</text>
+<text x="237.5" y="1062" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">Source control • PR / approvals</text>
+<text x="237.5" y="1085" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">Pipeline orchestration</text>
+<text x="237.5" y="1108" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">Self-hosted Agent connects outbound HTTPS</text>
+<rect x="475" y="155" width="1805" height="1155" rx="18" fill="#f8fbff" stroke="#3b82f6" stroke-width="3"/>
+<text x="499" y="193" font-family="Arial, DejaVu Sans, sans-serif" font-size="24" font-weight="700" fill="#0f172a" text-anchor="start">GCP PRODUCTION PROJECT  |  me-west1</text>
+<text x="499" y="221" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#64748b" text-anchor="start">Regional deployment • three-zone application tier • managed data services</text>
+<rect x="510" y="345" width="205" height="125" rx="14" fill="#eff6ff" stroke="#60a5fa" stroke-width="2"/>
+<path d="M522,345 H703" stroke="#60a5fa" stroke-width="8" stroke-linecap="round"/>
+<text x="612.5" y="379" font-family="Arial, DejaVu Sans, sans-serif" font-size="18" font-weight="700" fill="#14213d" text-anchor="middle">External Application LB</text>
+<text x="612.5" y="407" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">HTTPS entry point</text>
+<text x="612.5" y="430" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">Cloud Armor policy</text>
+<rect x="745" y="300" width="900" height="880" rx="20" fill="#eef8ff" stroke="#0ea5e9" stroke-width="3"/>
+<text x="770" y="340" font-family="Arial, DejaVu Sans, sans-serif" font-size="23" font-weight="700" fill="#0f172a" text-anchor="start">VPC | PRIVATE NETWORK</text>
+<text x="770" y="368" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#64748b" text-anchor="start">Private GKE nodes • firewall controls • private service connectivity</text>
+<rect x="775" y="395" width="840" height="750" rx="18" fill="#fff" stroke="#64748b" stroke-width="3"/>
+<text x="800" y="435" font-family="Arial, DejaVu Sans, sans-serif" font-size="22" font-weight="700" fill="#0f172a" text-anchor="start">REGIONAL GKE CLUSTER | PRIVATE NODES</text>
+<text x="800" y="463" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#64748b" text-anchor="start">3 zones • HPA / Cluster Autoscaler • Pod anti-affinity • PDB</text>
+<rect x="810" y="500" width="350" height="110" rx="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+<path d="M822,500 H1148" stroke="#3b82f6" stroke-width="8" stroke-linecap="round"/>
+<text x="985.0" y="534" font-family="Arial, DejaVu Sans, sans-serif" font-size="20" font-weight="700" fill="#14213d" text-anchor="middle">GKE Ingress / Frontend</text>
+<text x="985.0" y="562" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">Web UI • internal service routing</text>
+<rect x="1200" y="500" width="365" height="110" rx="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+<path d="M1212,500 H1553" stroke="#3b82f6" stroke-width="8" stroke-linecap="round"/>
+<text x="1382.5" y="534" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#14213d" text-anchor="middle">Python API</text>
+<text x="1382.5" y="562" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">OIDC validation • authorization</text>
+<text x="1382.5" y="585" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">Create Submission ID • issue Signed URL</text>
+<rect x="810" y="675" width="350" height="145" rx="14" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+<path d="M822,675 H1148" stroke="#f59e0b" stroke-width="8" stroke-linecap="round"/>
+<text x="985.0" y="709" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#14213d" text-anchor="middle">Validation Service</text>
+<text x="985.0" y="737" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">Read Incoming object</text>
+<text x="985.0" y="760" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">File type / content checks</text>
+<text x="985.0" y="783" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">Malware scan → Clean or Quarantine</text>
+<rect x="1200" y="675" width="365" height="145" rx="14" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+<path d="M1212,675 H1553" stroke="#10b981" stroke-width="8" stroke-linecap="round"/>
+<text x="1382.5" y="709" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#14213d" text-anchor="middle">Processing Worker</text>
+<text x="1382.5" y="737" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">Consumes Clean event from Pub/Sub</text>
+<text x="1382.5" y="760" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">Idempotency: Submission ID + generation</text>
+<text x="1382.5" y="783" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">Retry/backoff • Lease/heartbeat</text>
+<rect x="810" y="930" width="755" height="150" rx="14" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="2"/>
+<path d="M822,930 H1553" stroke="#8b5cf6" stroke-width="8" stroke-linecap="round"/>
+<text x="1187.5" y="964" font-family="Arial, DejaVu Sans, sans-serif" font-size="20" font-weight="700" fill="#14213d" text-anchor="middle">Reference Data Sync | CronJob</text>
+<text x="1187.5" y="992" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">Nightly delta sync from on-prem SQL Server over HA VPN</text>
+<text x="1187.5" y="1015" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">Staging → validation → promote to reference data</text>
+<text x="1187.5" y="1038" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">Continue with Last Known Good Data during outage</text>
+<rect x="1690" y="335" width="545" height="155" rx="14" fill="#fff" stroke="#3b82f6" stroke-width="2"/>
+<path d="M1702,335 H2223" stroke="#3b82f6" stroke-width="8" stroke-linecap="round"/>
+<text x="1962.5" y="369" font-family="Arial, DejaVu Sans, sans-serif" font-size="20" font-weight="700" fill="#14213d" text-anchor="middle">Cloud Storage | private buckets</text>
+<text x="1962.5" y="397" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">Incoming → validation → Clean / Quarantine</text>
+<text x="1962.5" y="420" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">Reports • UBLA • Public Access Prevention</text>
+<text x="1962.5" y="443" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">Versioning / generation tracking • Soft Delete</text>
+<rect x="1690" y="545" width="255" height="125" rx="14" fill="#f5f3ff" stroke="#8b5cf6" stroke-width="2"/>
+<path d="M1702,545 H1933" stroke="#8b5cf6" stroke-width="8" stroke-linecap="round"/>
+<text x="1817.5" y="579" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#14213d" text-anchor="middle">Pub/Sub</text>
+<text x="1817.5" y="607" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">Clean-file event</text>
+<text x="1817.5" y="630" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">Dead Letter Queue</text>
+<rect x="1980" y="545" width="255" height="125" rx="14" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+<path d="M1992,545 H2223" stroke="#10b981" stroke-width="8" stroke-linecap="round"/>
+<text x="2107.5" y="579" font-family="Arial, DejaVu Sans, sans-serif" font-size="18" font-weight="700" fill="#14213d" text-anchor="middle">Cloud SQL for PostgreSQL</text>
+<text x="2107.5" y="607" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">Private IP via PSA</text>
+<text x="2107.5" y="630" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">Regional HA • PITR backups</text>
+<rect x="1690" y="725" width="545" height="105" rx="14" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+<path d="M1702,725 H2223" stroke="#f59e0b" stroke-width="8" stroke-linecap="round"/>
+<text x="1962.5" y="759" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#14213d" text-anchor="middle">Secret Manager &amp; Workload Identity</text>
+<text x="1962.5" y="787" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">Per-workload least privilege • short-lived credentials • no SA keys</text>
+<rect x="1690" y="885" width="545" height="125" rx="14" fill="#f8fafc" stroke="#64748b" stroke-width="2"/>
+<path d="M1702,885 H2223" stroke="#64748b" stroke-width="8" stroke-linecap="round"/>
+<text x="1962.5" y="919" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#14213d" text-anchor="middle">Operations &amp; Security</text>
+<text x="1962.5" y="947" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">Cloud Logging • Monitoring • Alerting</text>
+<text x="1962.5" y="970" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">Cloud Audit Logs • budget / SLO alerts</text>
+<path d="M215 870 H260" fill="none" stroke="#d97706" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8,6" marker-end="url(#arr)"/>
+<path d="M410 870 H700 V1005 H810" fill="none" stroke="#d97706" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8,6" marker-end="url(#arr)"/>
+<text x="535" y="850" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#b45309" text-anchor="middle">Delta sync over HA VPN</text>
+<path d="M415 300 H485 V405 H510" fill="none" stroke="#2563eb" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<text x="465" y="285" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#2563eb" text-anchor="middle">HTTPS</text>
+<path d="M715 405 H745 V555 H810" fill="none" stroke="#2563eb" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<path d="M415 455 H470 V555 H1200" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8,6" marker-end="url(#arr)"/>
+<path d="M1160 555 H1200" fill="none" stroke="#2563eb" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<path d="M415 325 H485 V275 H1650 V390 H1690" fill="none" stroke="#2563eb" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7,6" marker-end="url(#arr)"/>
+<text x="1080" y="265" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="700" fill="#2563eb" text-anchor="middle">Browser → Incoming: direct upload with short-lived Signed URL</text>
+<path d="M1690 450 H1670 V845 H1175 V745" fill="none" stroke="#d97706" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<text x="1515" y="865" font-family="Arial, DejaVu Sans, sans-serif" font-size="13" font-weight="700" fill="#b45309" text-anchor="middle">Incoming object</text>
+<path d="M1160 745 H1200" fill="none" stroke="#10b981" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<text x="1180" y="730" font-family="Arial, DejaVu Sans, sans-serif" font-size="13" font-weight="700" fill="#047857" text-anchor="middle">Valid file</text>
+<path d="M1160 745 H1175 V650 H1660 V608 H1690" fill="none" stroke="#8b5cf6" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<text x="1500" y="640" font-family="Arial, DejaVu Sans, sans-serif" font-size="13" font-weight="700" fill="#6d28d9" text-anchor="middle">Clean file event</text>
+<path d="M1945 608 H1980" fill="none" stroke="#8b5cf6" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<path d="M1690 608 H1660 V630 H1600 V675 H1565" fill="none" stroke="#8b5cf6" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<path d="M1565 790 H1655 V690 H2105 V670" fill="none" stroke="#10b981" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<text x="1880" y="685" font-family="Arial, DejaVu Sans, sans-serif" font-size="13" font-weight="700" fill="#047857" text-anchor="middle">Status / metadata / results</text>
+<path d="M1565 820 H1665 V480 H1690" fill="none" stroke="#10b981" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<text x="1655" y="865" font-family="Arial, DejaVu Sans, sans-serif" font-size="13" font-weight="700" fill="#047857" text-anchor="middle">Reports / output objects</text>
+<rect x="2320" y="155" width="845" height="1155" rx="18" fill="#fffaf5" stroke="#f59e0b" stroke-width="3"/>
+<text x="2344" y="193" font-family="Arial, DejaVu Sans, sans-serif" font-size="24" font-weight="700" fill="#0f172a" text-anchor="start">DR REGION | me-central2</text>
+<text x="2344" y="221" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#64748b" text-anchor="start">Conditional on security, legal and data-owner approval</text>
+<rect x="2370" y="280" width="745" height="115" rx="14" fill="#fff" stroke="#64748b" stroke-width="2"/>
+<path d="M2382,280 H3103" stroke="#64748b" stroke-width="8" stroke-linecap="round"/>
+<text x="2742.5" y="314" font-family="Arial, DejaVu Sans, sans-serif" font-size="20" font-weight="700" fill="#14213d" text-anchor="middle">Recovery infrastructure (IaC)</text>
+<text x="2742.5" y="342" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">VPC / networking • regional GKE deployment • Artifact Registry access</text>
+<rect x="2370" y="455" width="350" height="145" rx="14" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+<path d="M2382,455 H2708" stroke="#10b981" stroke-width="8" stroke-linecap="round"/>
+<text x="2545.0" y="489" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#14213d" text-anchor="middle">Cloud SQL cross-region Read Replica</text>
+<text x="2545.0" y="517" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">Replication lag determines RPO</text>
+<text x="2545.0" y="540" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">Promote replica during DR</text>
+<text x="2545.0" y="563" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">Primary: automated backups + PITR</text>
+<rect x="2760" y="455" width="355" height="145" rx="14" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+<path d="M2772,455 H3103" stroke="#3b82f6" stroke-width="8" stroke-linecap="round"/>
+<text x="2937.5" y="489" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#14213d" text-anchor="middle">Cloud Storage recovery</text>
+<text x="2937.5" y="517" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">Configured object copy / replication</text>
+<text x="2937.5" y="540" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">Retention • versioning • Soft Delete</text>
+<text x="2937.5" y="563" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">Not assumed automatic</text>
+<rect x="2370" y="680" width="745" height="155" rx="14" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+<path d="M2382,680 H3103" stroke="#f59e0b" stroke-width="8" stroke-linecap="round"/>
+<text x="2742.5" y="714" font-family="Arial, DejaVu Sans, sans-serif" font-size="20" font-weight="700" fill="#14213d" text-anchor="middle">Recovery runbook</text>
+<text x="2742.5" y="742" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">Promote database → verify / restore objects → deploy GKE</text>
+<text x="2742.5" y="765" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">Validate services and data → update DNS</text>
+<text x="2742.5" y="788" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">Prevent split-brain / dual writers</text>
+<rect x="2370" y="930" width="745" height="120" rx="14" fill="#f8fafc" stroke="#64748b" stroke-width="2"/>
+<path d="M2382,930 H3103" stroke="#64748b" stroke-width="8" stroke-linecap="round"/>
+<text x="2742.5" y="964" font-family="Arial, DejaVu Sans, sans-serif" font-size="20" font-weight="700" fill="#14213d" text-anchor="middle">DR validation &amp; governance</text>
+<text x="2742.5" y="992" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">Restore tests • failover exercises • audit</text>
+<text x="2742.5" y="1015" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">Agree and validate RTO / RPO targets</text>
+<path d="M2720 395 V455" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<path d="M2720 600 V680" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<path d="M2720 835 V930" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<path d="M2235 610 H2320 V525 H2370" fill="none" stroke="#10b981" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7,5" marker-end="url(#arr)"/>
+<text x="2290" y="590" font-family="Arial, DejaVu Sans, sans-serif" font-size="13" font-weight="700" fill="#047857" text-anchor="middle">Cross-region DB replica</text>
+<path d="M2235 410 H2300 V520 H2760" fill="none" stroke="#3b82f6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7,5" marker-end="url(#arr)"/>
+<text x="2290" y="445" font-family="Arial, DejaVu Sans, sans-serif" font-size="13" font-weight="700" fill="#2563eb" text-anchor="middle">Approved object copy</text>
+<rect x="475" y="1340" width="1805" height="470" rx="18" fill="#f8fafc" stroke="#64748b" stroke-width="3"/>
+<text x="499" y="1378" font-family="Arial, DejaVu Sans, sans-serif" font-size="24" font-weight="700" fill="#0f172a" text-anchor="start">DELIVERY &amp; ENVIRONMENT PROJECTS</text>
+<text x="499" y="1406" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#64748b" text-anchor="start">Azure DevOps Server is source of truth • GitHub is used for assignment submission only</text>
+<rect x="510" y="1450" width="470" height="285" rx="18" fill="#f5faff" stroke="#60a5fa" stroke-width="3"/>
+<text x="535" y="1490" font-family="Arial, DejaVu Sans, sans-serif" font-size="22" font-weight="700" fill="#0f172a" text-anchor="start">NON-PRODUCTION PROJECT</text>
+<text x="535" y="1520" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#64748b" text-anchor="start">Dev / Test / Staging • synthetic data only</text>
+<rect x="545" y="1570" width="400" height="120" rx="14" fill="#fff" stroke="#60a5fa" stroke-width="2"/>
+<path d="M557,1570 H933" stroke="#60a5fa" stroke-width="8" stroke-linecap="round"/>
+<text x="745.0" y="1604" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#14213d" text-anchor="middle">Staging validation</text>
+<text x="745.0" y="1632" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">E2E tests • security scans</text>
+<text x="745.0" y="1655" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">Manual production approval</text>
+<rect x="1010" y="1450" width="390" height="285" rx="18" fill="#f7f5ff" stroke="#8b5cf6" stroke-width="3"/>
+<text x="1035" y="1490" font-family="Arial, DejaVu Sans, sans-serif" font-size="22" font-weight="700" fill="#0f172a" text-anchor="start">SHARED ARTIFACTS PROJECT</text>
+<text x="1035" y="1520" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#64748b" text-anchor="start">Centralized image repository</text>
+<rect x="1040" y="1570" width="330" height="120" rx="14" fill="#fff" stroke="#8b5cf6" stroke-width="2"/>
+<path d="M1052,1570 H1358" stroke="#8b5cf6" stroke-width="8" stroke-linecap="round"/>
+<text x="1205.0" y="1604" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#14213d" text-anchor="middle">Artifact Registry</text>
+<text x="1205.0" y="1632" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">Immutable image digest</text>
+<text x="1205.0" y="1655" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="middle">Build write • deploy read</text>
+<rect x="1450" y="1480" width="330" height="130" rx="14" fill="#fff" stroke="#64748b" stroke-width="2"/>
+<path d="M1462,1480 H1768" stroke="#64748b" stroke-width="8" stroke-linecap="round"/>
+<text x="1615.0" y="1514" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#14213d" text-anchor="middle">Self-hosted Agent</text>
+<text x="1615.0" y="1542" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">On-prem • outbound HTTPS to DevOps</text>
+<text x="1615.0" y="1565" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">Build / test / scan</text>
+<rect x="1810" y="1480" width="420" height="130" rx="14" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+<path d="M1822,1480 H2218" stroke="#f59e0b" stroke-width="8" stroke-linecap="round"/>
+<text x="2020.0" y="1514" font-family="Arial, DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#14213d" text-anchor="middle">GCP deployment identities</text>
+<text x="2020.0" y="1542" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">WIF subject to OIDC compatibility POC</text>
+<text x="2020.0" y="1565" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">Build identity ≠ Deploy identity</text>
+<text x="2020.0" y="1588" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#475569" text-anchor="middle">Short-lived credentials</text>
+<path d="M410 1090 H455 V1770 H1420 V1545 H1450" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7,6" marker-end="url(#arr)"/>
+<text x="900" y="1760" font-family="Arial, DejaVu Sans, sans-serif" font-size="13" font-weight="700" fill="#475569" text-anchor="middle">Agent retrieves source / pipeline from on-prem DevOps</text>
+<path d="M1780 1545 H1810" fill="none" stroke="#64748b" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<path d="M1810 1570 H1400 V1630 H1370" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7,5" marker-end="url(#arr)"/>
+<path d="M1660 1480 V1405 H1600 V1145" fill="none" stroke="#d97706" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="8,6" marker-end="url(#arr)"/>
+<text x="1750" y="1395" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#b45309" text-anchor="middle">HA VPN → private GKE control plane (deploy)</text>
+<path d="M1450 1545 H1400 V1530 H980 V1630" fill="none" stroke="#2563eb" stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7,5" marker-end="url(#arr)"/>
+<rect x="2320" y="1340" width="845" height="470" rx="18" fill="#fff" stroke="#cbd5e1" stroke-width="3"/>
+<text x="2344" y="1378" font-family="Arial, DejaVu Sans, sans-serif" font-size="24" font-weight="700" fill="#0f172a" text-anchor="start">ARCHITECTURE DECISIONS &amp; OPEN ITEMS</text>
+<text x="2350" y="1400" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="start">• Pub/Sub is at-least-once; Worker processing is idempotent.</text>
+<text x="2350" y="1439" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="start">• Retry with bounded backoff; exhausted messages go to DLQ.</text>
+<text x="2350" y="1478" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="start">• Only validated Clean objects emit processing events.</text>
+<text x="2350" y="1517" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="start">• Reconciliation detects stuck / missing jobs and repairs state.</text>
+<text x="2350" y="1556" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="start">• Expand/Contract DB migrations; rollback to prior image digest.</text>
+<text x="2350" y="1595" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="start">• Build, deploy and workload identities are separate.</text>
+<text x="2350" y="1634" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="start">• Validate Azure DevOps OIDC / WIF and private network paths.</text>
+<text x="2350" y="1673" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="start">• DR: test restore, replica promotion, object recovery and DNS.</text>
+<text x="2350" y="1712" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#475569" text-anchor="start">• Approve cross-region data transfer with security / data owner.</text>
+<rect x="35" y="1340" width="410" height="470" rx="18" fill="#fff" stroke="#94a3b8" stroke-width="3"/>
+<text x="59" y="1378" font-family="Arial, DejaVu Sans, sans-serif" font-size="24" font-weight="700" fill="#0f172a" text-anchor="start">FLOW LEGEND</text>
+<path d="M75 1435 H175" fill="none" stroke="#2563eb" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<text x="195" y="1441" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#334155" text-anchor="start">User / synchronous flow</text>
+<path d="M75 1480 H175" fill="none" stroke="#8b5cf6" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7,6" marker-end="url(#arr)"/>
+<text x="195" y="1486" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#334155" text-anchor="start">Identity / event flow</text>
+<path d="M75 1525 H175" fill="none" stroke="#10b981" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" marker-end="url(#arr)"/>
+<text x="195" y="1531" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#334155" text-anchor="start">Validated data / processing</text>
+<path d="M75 1570 H175" fill="none" stroke="#d97706" stroke-width="3" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="7,6" marker-end="url(#arr)"/>
+<text x="195" y="1576" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#334155" text-anchor="start">Control / security / DR</text>
+<text x="65" y="1640" font-family="Arial, DejaVu Sans, sans-serif" font-size="17" font-weight="700" fill="#0f172a" text-anchor="start">DESIGN SCOPE</text>
+<text x="65" y="1675" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#64748b" text-anchor="start">Conceptual architecture. Final topology, IAM</text>
+<text x="65" y="1700" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#64748b" text-anchor="start">bindings, WIF claims, replication mode and</text>
+<text x="65" y="1725" font-family="Arial, DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#64748b" text-anchor="start">RTO / RPO are validated in detailed design.</text>
+<text x="55" y="1860" font-family="Arial, DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#64748b" text-anchor="start">Architecture view is conceptual. Validate service availability, IAM, network paths, replication behavior and operational runbooks before implementation.</text>
+</svg>
