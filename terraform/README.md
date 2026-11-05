@@ -34,6 +34,25 @@
 הגדרות ברירת המחדל של סביבת ה-Lab נשארו ללא שינוי, כדי לאפשר סביבת עבודה מצומצמת וחסכונית.
 
 נוסף קובץ דוגמה בשם `terraform.tfvars.ha.example`, המציג פרופיל הגדרות התומך בתרחיש HA. ניתן להשתמש בו כבסיס להגדרת הסביבה בהתאם לצורכי הפריסה.
+## קבצים ששונו
+קובץ	מה השתנה
+terraform/platform/gke.tf	התאמת הגדרות ה-Node Pool לתמיכה ב-Autoscaling ובפיזור בין Zones.
+terraform/platform/terraform.tfvars.ha.example	קובץ הגדרות לדוגמה לפרופיל HA: שלושה Zones, מינימום 3 ומקסימום 6 Nodes והפעלת Cloud SQL HA.
+
+## אופן בדיקת השינוי
+פקודות בדיקה פשוטות:
+terraform fmt -check -recursive terraform
+
+terraform -chdir=terraform/platform init -backend=false
+
+terraform -chdir=terraform/platform validate
+
+
+הסבר קצר:
+- fmt – בדיקת אחידות העיצוב של קובצי Terraform.
+- init – אתחול סביבת Terraform ללא חיבור ל-Backend מרוחק.
+- validate – בדיקת תקינות תחבירית ועקביות של הגדרות Terraform.
+חשוב: הבדיקות אינן מוכיחות שהפריסה תצליח בפועל, או שקיימים מכסות ומשאבים זמינים ב-GCP.
 
 ## הערות
 
