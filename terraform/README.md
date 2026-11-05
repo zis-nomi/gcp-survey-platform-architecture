@@ -42,17 +42,19 @@
 
 ## אופן בדיקת השינוי
 פקודות בדיקה פשוטות:
+
 terraform fmt -check -recursive terraform
 
 terraform -chdir=terraform/platform init -backend=false
 
 terraform -chdir=terraform/platform validate
 
-
+terraform -chdir=terraform/platform plan
 הסבר קצר:
 - fmt – בדיקת אחידות העיצוב של קובצי Terraform.
 - init – אתחול סביבת Terraform ללא חיבור ל-Backend מרוחק.
 - validate – בדיקת תקינות תחבירית ועקביות של הגדרות Terraform.
+- plan - ע"מ לראות שהשינוי מתוכנן להתבצע
 חשוב: הבדיקות אינן מוכיחות שהפריסה תצליח בפועל, או שקיימים מכסות ומשאבים זמינים ב-GCP.
 
 ## הערות
