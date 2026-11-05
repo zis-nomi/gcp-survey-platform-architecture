@@ -35,9 +35,10 @@
 
 נוסף קובץ דוגמה בשם `terraform.tfvars.ha.example`, המציג פרופיל הגדרות התומך בתרחיש HA. ניתן להשתמש בו כבסיס להגדרת הסביבה בהתאם לצורכי הפריסה.
 ## קבצים ששונו
-קובץ	מה השתנה
-terraform/platform/gke.tf	התאמת הגדרות ה-Node Pool לתמיכה ב-Autoscaling ובפיזור בין Zones.
-terraform/platform/terraform.tfvars.ha.example	קובץ הגדרות לדוגמה לפרופיל HA: שלושה Zones, מינימום 3 ומקסימום 6 Nodes והפעלת Cloud SQL HA.
+|קובץ|	מה השתנה|
+|---|---|
+|terraform/platform/gke.tf|	התאמת הגדרות ה-Node Pool לתמיכה ב-Autoscaling ובפיזור בין Zones.|
+|terraform/platform/terraform.tfvars.ha.example|	קובץ הגדרות לדוגמה לפרופיל HA: שלושה Zones, מינימום 3 ומקסימום 6 Nodes והפעלת Cloud SQL HA.|
 
 ## אופן בדיקת השינוי
 פקודות בדיקה פשוטות:
